@@ -2,6 +2,7 @@ class aula01 {
     public static void main(String[] args) {
         System.out.println("Olá, Mundo!");
 
+        // Tipos de dados (alguns)
 
         byte b = 100;
         float f = 10.5f;
