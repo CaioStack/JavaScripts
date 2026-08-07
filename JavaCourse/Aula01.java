@@ -7,6 +7,8 @@ class aula01 {
         float f = 10.5f;
         String str = "Caio";
 
+        // Condicionais
+
         if (b > 101) {
             System.out.println("Verdadeiro");
         } else {
