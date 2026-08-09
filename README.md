@@ -64,5 +64,3 @@ Alguns códigos podem representar exercícios de cursos, testes, exemplos ou imp
 ⭐ Se este repositório for útil para você de alguma forma, considere deixar uma estrela!
 
 ---
-
-⭐ Se este repositório for útil para você de alguma forma, considere deixar uma estrela!
