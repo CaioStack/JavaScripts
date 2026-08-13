@@ -1,87 +1,86 @@
 package br.edu.principal;
 
-import java.util.ArrayList;
+/*
+ * ============================================================
+ *  AULA 01 - INTRODUÇÃO AO JAVA
+ * ============================================================
+ *
+ * Bem-vindo(a) ao curso de Java! Nesta primeira aula você vai
+ * aprender:
+ *   1) O que é Java e como um programa Java é organizado
+ *   2) O que é a classe "main" (ponto de entrada do programa)
+ *   3) Como exibir mensagens no console
+ *   4) Como escrever comentários
+ *
+ * -----------------------------------------------------------
+ * SOBRE A LINGUAGEM
+ * -----------------------------------------------------------
+ * Java é uma linguagem orientada a objetos, compilada para um
+ * "bytecode" que roda dentro da JVM (Java Virtual Machine).
+ * Isso permite que o mesmo programa rode em qualquer sistema
+ * operacional que tenha a JVM instalada ("write once, run
+ * anywhere").
+ *
+ * Todo código Java fica dentro de uma CLASSE. O nome do arquivo
+ * .java PRECISA ser igual ao nome da classe pública que ele
+ * contém. Ex.: a classe "Aula01_Introducao" precisa estar no
+ * arquivo "Aula01_Introducao.java".
+ *
+ * -----------------------------------------------------------
+ * TIPOS DE COMENTÁRIOS EM JAVA
+ * -----------------------------------------------------------
+ * // Comentário de uma linha
+ *
+ * /* Comentário
+ *    de várias linhas *\/
+ *
+ * /** Comentário de documentação (Javadoc) *\/
+ */
 
 public class Aula01 {
 
-	public static void main(String[] args) {
+    // O método "main" é o PONTO DE ENTRADA de qualquer aplicação Java.
+    // A JVM procura exatamente por esta assinatura para iniciar o programa:
+    //   public static void main(String[] args)
+    //
+    // - public  -> pode ser acessado de fora da classe (a JVM precisa acessá-lo)
+    // - static  -> pertence à classe, não precisa criar um objeto para chamá-lo
+    // - void    -> não retorna nenhum valor
+    // - String[] args -> vetor de argumentos passados via linha de comando
+    public static void main(String[] args) {
 
-		    int idade = 16;
-		    String nome = "Caio";
+        // System.out.println() imprime um texto no console e PULA uma linha
+        System.out.println("Olá, mundo!");
 
-		    var nomeVariavel = "Caio";
+        // System.out.print() imprime SEM pular linha
+        System.out.print("Este texto ");
+        System.out.print("fica na mesma linha.");
+        System.out.println(); // pula linha manualmente
 
-		    // Numeros inteiros = 127, 1, 23 ...
+        // Também é possível formatar saídas com printf
+        System.out.printf("Estou aprendendo %s em %d de %s.%n", "Java", 2026, "agosto");
+        
+     // O método printf substitui os marcadores de posição pelos argumentos na ordem:
+     // %s -> Substituído por "Java" (texto/String)
+     // %d -> Substituído por 2026 (número decimal/inteiro)
+     // %s -> Substituído por "agosto" (texto/String)
+     // %n -> Quebra de linha
 
-		    // byte -> 8 bits -> -128 a 127
-		    // short -> 16 bits -> -32.768 a 32.767
-		    // int -> 32 bits -> -2.147.483.648 a 2.147.483.647
-		    // long -> 64 bits -> -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
+        // Toda instrução (statement) em Java termina com ponto e vírgula ";"
+        System.out.println("Fim da Aula 01!");
+    }
+}
 
-
-		    // Numeros decimais = 1.2, 3.14, 5.6 ...
-
-		    // float -> 32 bits -> aproximadamente 7 dígitos de precisão, precisão simples
-		    // double -> 64 bits -> aproximadamente 15 dígitos de precisão, precisão dupla
-
-
-		    // String -> sequência de caracteres, exemplo: "Caio", "Olá, mundo!", "Java"
-
-		    // Char -> 16 bits -> representa um único caractere, exemplo: 'A', 'B', 'C'
-
-		    // Boolean -> 1 bit -> representa verdadeiro ou falso, exemplo: true, false
-
-		    
-		    byte b = 100;
-		    short s = 1000;
-		    int i = 10000;
-		    long l = 100000L;
-		    float f = 10.5f;
-		    double d = 20.5;
-		    char c = 'A';
-		    String str = "Caio";
-		    boolean bool = true;
-
-		    int[] numeros = {1, 2, 3, 4, 5};
-		    boolean[] booleanos = {true, false, true};
-
-		    if (str.isBlank()) {
-		        System.out.println("Vazio");
-		    } else if (str.equals("Caio")) {
-		        System.out.println("O nome é Caio.");
-		    } 
-		    else {
-		        System.out.println("O nome não é Caio.");
-		    }
-
-		    System.out.println(numeros[0]);
-		    System.out.println(numeros.length); // quantidade de elementos no array
-
-		    System.out.println(booleanos[0]);
-		    System.out.println(booleanos.length);
-
-
-		    // ArrayList -> lista dinâmica
-
-		    ArrayList<String> nomes = new ArrayList<>();
-		    nomes.add("Caio");
-		    nomes.add("João");
-		    nomes.add("Maria");
-		    nomes.add("Pedro");
-
-		    System.out.println(nomes.get(0));
-		    System.out.println(nomes.size());
-
-		    nomes.remove(0);
-		    System.out.println(nomes.get(0));
-		    System.out.println(nomes.size());
-
-
-		    // loops
-
-		    for (int j = 0; j < nomes.size(); j++) {
-		        System.out.println(nomes.get(j));
-
-		        }
-		    }
-		}
+/*
+ * -----------------------------------------------------------
+ * RESUMO DA AULA
+ * -----------------------------------------------------------
+ * - Todo programa Java começa em "public static void main(String[] args)"
+ * - System.out.println() imprime com quebra de linha
+ * - System.out.print() imprime sem quebra de linha
+ * - System.out.printf() imprime com formatação (%s, %d, %f, %n...)
+ * - Comentários ajudam a documentar o código: // e /* *\/
+ *
+ * Agora vá para o Exercício 01 e pratique o que aprendeu!
+ * ============================================================
+ */
