@@ -1,4 +1,4 @@
-/* Exercício 02 - referente à aula 02 (Variáveis, Tipos e Operadores)
+/* Exercício 02 - referente à Aula 02 (Variáveis, Tipos e Operadores)
  *
  * Tarefas:
  * 
