@@ -16,7 +16,6 @@
  *    ****
  *    *****
  *    (5 linhas, cada linha com uma quantidade crescente de *)
- * ============================================================
  */
 
 package br.edu.principal;
