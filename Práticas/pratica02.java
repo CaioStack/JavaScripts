@@ -26,7 +26,7 @@ public class pratica02 {
 		Scanner sc = new Scanner (System.in);
 		
 		// 1.
-		/*
+		
 		System.out.println("Digite seu nome completo: ");
 		String nome = sc.nextLine();
 		
@@ -47,10 +47,10 @@ public class pratica02 {
         System.out.println("Idade: " + idade);
         System.out.println("Altura: " + altura);
         System.out.println("Inicial: " + inicial);
-        System.out.println("Gosta de Java? " + gostaJava); */
+        System.out.println("Gosta de Java? " + gostaJava);
         
         // 2.
-		/*
+		
 		System.out.print("Digite o primeiro número (com vírgula, ex: 5,5): ");
 		double n1 = sc.nextDouble();
 
@@ -72,7 +72,7 @@ public class pratica02 {
 		System.out.println("\n--- Demonstração de Conversões ---");
 		System.out.println("Casting Implícito (int " + n2 + " para double): " + n2D);
 		System.out.println("Casting Explícito (double " + n1 + " para int): " + n1I);
-		System.out.println("Soma usando o valor convertido (n1I + n2): " + (n1I + n2)); */
+		System.out.println("Soma usando o valor convertido (n1I + n2): " + (n1I + n2));
 		
 		// 3.
 		
