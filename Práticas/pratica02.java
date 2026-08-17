@@ -49,6 +49,8 @@ public class pratica02 {
         System.out.println("Inicial: " + inicial);
         System.out.println("Gosta de Java? " + gostaJava);
 
+		// 2 e 3 - fazendo
+
 	}
 
 }
