@@ -91,8 +91,51 @@ public class pratica04 {
 		
 		// 3.
 		
-		// TODO
+		System.out.println("-- Menu -- ");
+		System.out.println("A - Áustria");
+		System.out.println("B - Bolívia");
+		System.out.println("C - Croácia");
+		System.out.println("D - Dinamarca");
+		System.out.println("E - Escócia");
+		
+		System.out.println("Escolha um país(digite a letra respectiva): ");
+		
+		
+		// .toUpperCase() garante que funcione mesmo se digitarem 'a' minúsculo
+		String letra = sc.next().toUpperCase();
+		
+		String país = switch(letra) {
+		
+		case "A" -> "Áustria";
+		case "B" -> "Bolívia";
+		case "C" -> "Croácia";
+		case "D" -> "Dinamarca";
+		case "E" -> "Escócia";
+		
+		default -> "Letra inválida!";
+		
+		};
+		
+		System.out.println("A letra " + letra + " refere-se ao país " + país);
 		
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
