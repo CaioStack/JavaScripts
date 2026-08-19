@@ -1,3 +1,5 @@
+// Exercício 02 - 18.08.2026
+
 package br.edu.principal;
 
 import java.util.Scanner;
